@@ -1,0 +1,16 @@
+img {
+    max-width: 25px;
+}
+
+li {
+    list-style: none;
+}
+
+.side-nav {
+display: grid;
+}
+
+.profile-picture {
+    max-width: 40px;
+    border-radius: 50%;
+}
