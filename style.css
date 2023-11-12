@@ -1,11 +1,11 @@
 body {
     margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .page-layout {
     display: grid;
-    grid-template-columns: 250px minmax(600px, 1fr);
-    
+    grid-template-columns: 250px 1fr;
 }
 
 
@@ -25,12 +25,11 @@ li {
 }
 
 .side-nav {
-    background-color: rgb(0, 38, 255);
+    background-color: #075985;
     display: flex;
     flex-direction: column;
     font-size: large;
     justify-content: baseline;
-   
 }
 
 .side-nav a {
@@ -47,7 +46,6 @@ li {
     justify-content: center;
     align-items: center;
     gap: 8px;
-
 }
 
 .title-sidenav img {
@@ -55,22 +53,173 @@ li {
 }
 
 .header {
-    background-color: brown;
+    background-color: white;
     display: grid;
     grid-template-columns: 3fr 1fr;
-
+    gap: 10px;
+    padding: 20px;
 }
 
 .search-bar {
     display: flex;
     gap: 20px;
-    margin-left: 60px;
+    margin-left: 40px;
     align-items: center;
-    
+}
 
+input {
+    width: 850px;
+    height: 30px;
+    border-radius: 23px;
+    border: none;
+    background-color: #e2e8f0;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.profile {
+    display: flex;
+    gap: 10px;
+    margin-left: 40px;
+    align-items: center;
+}
+
+#main-profile-picture {
+    max-width: 90px;
+}
+
+.textprofile div {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -150px;
+    gap: 15px;
+}
+
+button {
+    height: 45px;
+    width: 120px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #0369a1;
+    color: white;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #e2e8f0;
+}
+
+.project-container {
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-left: solid 10px red;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.card-text {
+    padding-right: 40px;
+    font-size: large;
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .profile-picture {
-    max-width: 40px;
+    max-width: 50px;
     border-radius: 50%;
+}
+
+.card-title {
+    font-size: larger;
+    font-weight: 700;
+}
+
+.announcements {
+    padding-right: 20px;
+}
+
+.announc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.ann-title {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.read-more {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2px;
+}
+
+.read-more a {
+    color: black;
+}
+
+.trending {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.user-profile {
+    display: flex;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+.user-tag {
+    font-size: larger;
+    font-weight: 500;
+}
+
+img {
+    cursor: pointer;
 }

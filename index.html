@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,11 +16,11 @@
         <div class="side-nav">
             <div class="title-sidenav">
                 <img src="./Images/view-dashboard.svg" alt="view-dashboard"> Dashboard
-                
             </div>
             <div class="main-sidenav">
                 <li>
-                    <hr> <ul class="sideitem"> <img src="./Images/home.svg"> <a href="">Home</a> </ul>
+                    <hr>
+                    <ul class="sideitem"> <img src="./Images/home.svg"> <a href="">Home</a> </ul>
                     <ul class="sideitem"><img src="./Images/account.svg"> <a href="">Profile</a></ul>
                     <ul class="sideitem"><img src="./Images/message.svg"> <a href="">Messages</a></ul>
                     <ul class="sideitem"><img src="./Images/history.svg"> <a href="">History</a></ul>
@@ -35,160 +38,174 @@
             </div>
         </div>
         <div class="principal">
-        <div class="header">
-            <div class="search-bar">
-                <img src="./Images/magnify.svg" alt="searc-icon"> <input type="text">
+            <div class="header">
+                <div class="search-bar">
+                    <img src="./Images/magnify.svg" alt="searc-icon"> <input type="text">
+                </div>
+                <div class="notification">
+                    <img src="./Images/bell.svg" alt="bell icon">
+                    <img src="./Images/dog.png" alt="dog icon" class="profile-picture"> Rodolfo Litz
+                </div>
+                <div class="profile">
+                    <img src="./Images/dog.png" alt="dog icon" class="profile-picture" id="main-profile-picture">
+                    <div class="textprofile">
+                        Hi there,
+                        <div>Rodolfo Litz (@rodilitz)</div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button type="button">Share</button>
+                </div>
             </div>
-            <div class="notification">
-                <img src="./Images/bell.svg" alt="bell icon">
-                <img src="./Images/dog.png" alt="dog icon" class="profile-picture"> Rodolfo Litz
-            </div>
-            <div class="profile">
-                <img src="./Images/dog.png" alt="dog icon" class="profile-picture" id="main-profile-picture">
-                <p>Hi there,</p>
-                <p>Rodolfo Litz (@rodilitz)</p>
-            </div>
-            <div class="button">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
-            </div>
-        </div>
             <div class="main-content">
-                <div class="project">
+                <div class="project-container">
                     <h2>Your Project</h2>
-                    <div class="card">
-                        <p>Super Cool Project</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos sed ut eligendi,
-                            quisquam quaerat voluptate alias inventore, nesciunt animi quas perspiciatis nihil soluta
-                            quidem id placeat. Consequatur, eius. Reprehenderit!</p>
-                        <div class="icon">
-                            <img src="./Images/thumb-up.svg" alt="thump-up">
-                            <img src="./Images/delete.svg" alt="delete">
-                            <img src="./Images/source-fork.svg" alt="source-fork">
+                    <div class="project">
+                        <div class="card">
+                            <div class="card-title">Super Cool Project</div>
+                            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                                dignissimos sed ut eligendi,
+                                quisquam quaerat voluptate alias inventore, nesciunt animi quas perspiciatis nihil
+                                soluta
+                                quidem id placeat. Consequatur, eius. Reprehenderit!</div>
+                            <div class="icon">
+                                <img src="./Images/thumb-up.svg" alt="thump-up">
+                                <img src="./Images/delete.svg" alt="delete">
+                                <img src="./Images/source-fork.svg" alt="source-fork">
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <p>Super Cool Project</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos sed ut eligendi,
-                            quisquam quaerat voluptate alias inventore, nesciunt animi quas perspiciatis nihil soluta
-                            quidem id placeat. Consequatur, eius. Reprehenderit!</p>
-                        <div class="icon">
-                            <img src="./Images/thumb-up.svg" alt="thump-up">
-                            <img src="./Images/delete.svg" alt="delete">
-                            <img src="./Images/source-fork.svg" alt="source-fork">
+                        <div class="card">
+                            <div class="card-title">Super Cool Project</div>
+                            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                                dignissimos sed ut eligendi,
+                                quisquam quaerat voluptate alias inventore, nesciunt animi quas perspiciatis nihil
+                                soluta
+                                quidem id placeat. Consequatur, eius. Reprehenderit!</div>
+                            <div class="icon">
+                                <img src="./Images/thumb-up.svg" alt="thump-up">
+                                <img src="./Images/delete.svg" alt="delete">
+                                <img src="./Images/source-fork.svg" alt="source-fork">
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <p>Super Cool Project</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos sed ut eligendi,
-                            quisquam quaerat voluptate alias inventore, nesciunt animi quas perspiciatis nihil soluta
-                            quidem id placeat. Consequatur, eius. Reprehenderit!</p>
-                        <div class="icon">
-                            <img src="./Images/thumb-up.svg" alt="thump-up">
-                            <img src="./Images/delete.svg" alt="delete">
-                            <img src="./Images/source-fork.svg" alt="source-fork">
+                        <div class="card">
+                            <div class="card-title">Super Cool Project</div>
+                            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                                dignissimos sed ut eligendi,
+                                quisquam quaerat voluptate alias inventore, nesciunt animi quas perspiciatis nihil
+                                soluta
+                                quidem id placeat. Consequatur, eius. Reprehenderit!</div>
+                            <div class="icon">
+                                <img src="./Images/thumb-up.svg" alt="thump-up">
+                                <img src="./Images/delete.svg" alt="delete">
+                                <img src="./Images/source-fork.svg" alt="source-fork">
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <p>Super Cool Project</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos sed ut eligendi,
-                            quisquam quaerat voluptate alias inventore, nesciunt animi quas perspiciatis nihil soluta
-                            quidem id placeat. Consequatur, eius. Reprehenderit!</p>
-                        <div class="icon">
-                            <img src="./Images/thumb-up.svg" alt="thump-up">
-                            <img src="./Images/delete.svg" alt="delete">
-                            <img src="./Images/source-fork.svg" alt="source-fork">
+                        <div class="card">
+                            <div class="card-title">Super Cool Project</div>
+                            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                                dignissimos sed ut eligendi,
+                                quisquam quaerat voluptate alias inventore, nesciunt animi quas perspiciatis nihil
+                                soluta
+                                quidem id placeat. Consequatur, eius. Reprehenderit!</div>
+                            <div class="icon">
+                                <img src="./Images/thumb-up.svg" alt="thump-up">
+                                <img src="./Images/delete.svg" alt="delete">
+                                <img src="./Images/source-fork.svg" alt="source-fork">
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <p>Super Cool Project</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos sed ut eligendi,
-                            quisquam quaerat voluptate alias inventore, nesciunt animi quas perspiciatis nihil soluta
-                            quidem id placeat. Consequatur, eius. Reprehenderit!</p>
-                        <div class="icon">
-                            <img src="./Images/thumb-up.svg" alt="thump-up">
-                            <img src="./Images/delete.svg" alt="delete">
-                            <img src="./Images/source-fork.svg" alt="source-fork">
+                        <div class="card">
+                            <div class="card-title">Super Cool Project</div>
+                            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                                dignissimos sed ut eligendi,
+                                quisquam quaerat voluptate alias inventore, nesciunt animi quas perspiciatis nihil
+                                soluta
+                                quidem id placeat. Consequatur, eius. Reprehenderit!</div>
+                            <div class="icon">
+                                <img src="./Images/thumb-up.svg" alt="thump-up">
+                                <img src="./Images/delete.svg" alt="delete">
+                                <img src="./Images/source-fork.svg" alt="source-fork">
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <p>Super Cool Project</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos sed ut eligendi,
-                            quisquam quaerat voluptate alias inventore, nesciunt animi quas perspiciatis nihil soluta
-                            quidem id placeat. Consequatur, eius. Reprehenderit!</p>
-                        <div class="icon">
-                            <img src="./Images/thumb-up.svg" alt="thump-up">
-                            <img src="./Images/delete.svg" alt="delete">
-                            <img src="./Images/source-fork.svg" alt="source-fork">
+                        <div class="card">
+                            <div class="card-title">Super Cool Project</div>
+                            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                                dignissimos sed ut eligendi,
+                                quisquam quaerat voluptate alias inventore, nesciunt animi quas perspiciatis nihil
+                                soluta
+                                quidem id placeat. Consequatur, eius. Reprehenderit!</div>
+                            <div class="icon">
+                                <img src="./Images/thumb-up.svg" alt="thump-up">
+                                <img src="./Images/delete.svg" alt="delete">
+                                <img src="./Images/source-fork.svg" alt="source-fork">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="news">
                     <div class="announcements">
                         <h2>Announcements</h2>
+
                         <div class="announc">
-                            <p>A thing happened</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae culpa alias nihil
+                            <div class="ann-title">A thing happened</div>
+                            <div class="ann-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                                culpa alias nihil
                                 nesciunt quam voluptate? Voluptatibus officia earum eius eos ipsum quam iste delectus
-                                odio nobis asperiores? Voluptate, suscipit doloremque?</p>
+                                odio nobis asperiores? Voluptate, suscipit doloremque?</div>
                             <div class="read-more">
-                                <a href="">read more <img src="./Images/arrow-right-thin.svg" alt="arrow-right-thin">
-                                </a>
+                                <a href=""> read more </a>
+                                <img src="./Images/arrow-right-thin.svg" alt="arrow-right-thin">
                             </div>
-                            <hr>
-                        </div>
-                        <div class="announcements"></div>
-                        <p>A thing happened</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae culpa alias nihil
-                            nesciunt quam voluptate? Voluptatibus officia earum eius eos ipsum quam iste delectus odio
-                            nobis asperiores? Voluptate, suscipit doloremque?</p>
-                        <div class="read-more">
-                            <a href="">read more <img src="./Images/arrow-right-thin.svg" alt="arrow-right-thin"> </a>
                         </div>
                         <hr>
-                    </div>
-                </div>
-                <div class="trending">
-                    <div class="user-profile">
-                        <img src="./Images/giraffa.png" alt="giraffa" class="profile-picture">
-                        <div class="text">
-                            <p>@tegan</p>
-                            <p>World Peace Builder</p>
+                        <div class="announc">
+                            <div class="ann-title">A thing happened</div>
+                            <div class="ann-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                                culpa alias nihil
+                                nesciunt quam voluptate? Voluptatibus officia earum eius eos ipsum quam iste delectus
+                                odio nobis asperiores? Voluptate, suscipit doloremque?</div>
+                            <div class="read-more">
+                                <a href=""> read more </a>
+                                <img src="./Images/arrow-right-thin.svg" alt="arrow-right-thin">
+                            </div>
                         </div>
                     </div>
-                    <div class="user-profile">
-                        <img src="./Images/dog.png" alt="dog" class="profile-picture">
-                        <div class="text">
-                            <p>@rodilitz</p>
-                            <p>Super Cool Project</p>
+                    <h2>Trending</h2>
+                    <div class="trending">
+                        <div class="user-profile">
+                            <img src="./Images/giraffa.png" alt="giraffa" class="profile-picture">
+                            <div class="text">
+                                <div class="user-tag">@tegan</div>
+                                <div>World Peace Builder</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="user-profile">
-                        <img src="./Images/bear.png" alt="bear" class="profile-picture">
-                        <div class="text">
-                            <p>@kendall</p>
-                            <p>Life Changing App</p>
+                        <div class="user-profile">
+                            <img src="./Images/dog.png" alt="dog" class="profile-picture">
+                            <div class="text">
+                                <div class="user-tag">@rodilitz</div>
+                                <div>Super Cool Project</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="user-profile">
-                        <img src="./Images/panda.png" alt="panda" class="profile-picture">
-                        <div class="text">
-                            <p>@alex</p>
-                            <p>No Traffic Maker</p>
+                        <div class="user-profile">
+                            <img src="./Images/bear.png" alt="bear" class="profile-picture">
+                            <div class="text">
+                                <div class="user-tag">@kendall</div>
+                                <div>Life Changing App</div>
+                            </div>
+                        </div>
+                        <div class="user-profile">
+                            <img src="./Images/panda.png" alt="panda" class="profile-picture">
+                            <div class="text">
+                                <div class="user-tag">@alex</div>
+                                <div>No Traffic Maker</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
-
-
-
-
     </div>
 </body>
-
 </html>
